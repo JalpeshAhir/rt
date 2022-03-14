@@ -1,0 +1,156 @@
+.overly_singlecard-wrapper {
+  height: 300px;
+  width: 454px;
+  margin: 50px auto;
+  border-radius: 7px 7px 7px 7px;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+}
+
+.overly_singlecard-img_wrapper {
+  float: left;
+  width: 227px;
+  height: 300px;
+}
+
+.overly_singlecard-img_wrapper img {
+  height: 100%;
+  width: 100%;
+
+  border-radius: 7px 0 0 7px;
+}
+
+.overly_singlecard-product_info {
+  float: left;
+  height: 100%;
+  width: 247px;
+  border-radius: 0 7px 7px 0;
+  background-color: #ffffff;
+
+  padding: 1.5rem 10px 1rem 1rem;
+
+  flex-direction: column;
+  display: flex;
+
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.product_info-heading h3 {
+  font-family: var(--font-base);
+  letter-spacing: -1px;
+  margin-bottom: 4px;
+}
+
+.product_info-heading h6 {
+  color: #908f8f;
+  font-family: var(--font-base);
+}
+
+.product_info-dis {
+  font-family: var(--font-alt);
+  color: #686866;
+  font-weight: 400;
+}
+
+.product_info-buynow {
+  display: flex;
+  gap: 1rem;
+  /* align-items: center; */
+  text-align: center;
+  justify-content: center;
+}
+
+.product_info-buynow h3 {
+  color: #22b8cf;
+}
+
+.buynow_btn {
+  padding: 5px 10px;
+  color: #ffffff;
+  font-family: var(--font-base);
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  background: #22b8cf;
+  border-radius: 50px;
+}
+
+@media (max-width: 1440px) {
+  .overly_singlecard-wrapper {
+    height: 280px;
+    width: 390px;
+  }
+
+  .overly_singlecard-img_wrapper {
+    width: 180px;
+    height: 280px;
+  }
+
+  .overly_singlecard-product_info {
+    width: 210px;
+    padding: 1rem 10px 1rem 1rem;
+  }
+
+  .product_info-heading h3 {
+    font-size: 22px;
+  }
+
+  .product_info-heading h6 {
+    font-size: 14px;
+  }
+
+  .buynow_btn {
+    padding: 4px 8px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 450px) {
+  .overly_singlecard-wrapper {
+    flex-direction: column;
+  }
+
+  .overly_singlecard-img_wrapper {
+    height: 50%;
+  }
+
+  .overly_singlecard-product_info {
+    height: 100%;
+    width: auto;
+
+    padding: 14px 10px 0 auto;
+  }
+
+  .product_info-heading h3 {
+    font-size: 18px;
+  }
+
+  .product_info-heading h6 {
+    font-size: 14px;
+  }
+
+  .product_info-dis {
+    font-size: 14px;
+  }
+
+  .product_info-buynow {
+    margin-top: 4px;
+  }
+
+  .product_info-buynow h3 {
+    font-size: 20px;
+  }
+
+  .buynow_btn {
+    padding: 3px 7px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}

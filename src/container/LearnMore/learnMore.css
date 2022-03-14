@@ -1,0 +1,125 @@
+.learnmore__wrapper {
+    width: 100%;
+    min-height: 80vh;
+    background: #f8f9fa;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.learnmore_img_wrapper {
+    width: 540px;
+    height: 377px;
+    border-radius: 10px;
+
+}
+
+.learnmore_text_wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+
+    max-width: 700px;
+}
+
+.learnmore_blue_text {
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+
+    line-height: 23px;
+    color: var(--color-sky);
+
+    margin-top: 1rem;
+    margin-bottom: 2.4rem;
+}
+
+/* .learnmore_list_wrapper {
+
+} */
+
+.learnmore_single_list {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.6rem;
+
+    align-items: baseline;
+
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+    line-height: 29px;    
+
+    color: #000000;
+}
+
+.learnmore_butoon {
+
+    padding: 0.5rem 2.75rem;
+    max-width: fit-content;
+    background: var(--color-sky);
+    border: none;
+    border-radius: 6px;
+
+    font-family: var(--font-alt);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    line-height: 24px;
+    margin-top: 2rem;
+    
+    cursor: pointer;
+    color: #FFFFFF;
+
+}
+
+
+/* *** MEDIA QUERYS START */
+
+    @media (max-width:450px) {        
+        .learnmore__wrapper {
+            flex-direction: column-reverse;
+            gap: 2rem;
+        }
+
+        .learnmore_img_wrapper {
+            width: 100%;
+            height: auto;
+        }
+
+        .learnmore_text_wrapper {
+            padding: 1rem 1rem;
+        }
+        
+        .learnmore_blue_text {
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .learnmore_check_mark {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .learnmore_single_list {
+            gap: 1rem;
+            font-size: 14px;
+            line-height: 22px;  
+            align-items: self-start;
+        }
+
+        .learnmore_butoon {
+            align-self: center;
+            font-size: 1rem;
+            line-height: 20px;
+        }
+    }
+
+
+/* *** MEDIA QUERYS END */

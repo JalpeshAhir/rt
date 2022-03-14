@@ -1,0 +1,76 @@
+/* *** CARD SECTION START *** */
+
+
+
+.single_card_wrapper {
+    filter: drop-shadow(0px 4px 24px rgba(123, 123, 123, 0.15));
+    width: 255px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    background: #F7F8FA;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+
+    border-radius: 10px;
+
+
+    /* margin: 2rem 6rem 2rem auto; */
+}
+
+.card_dis_wrapper {
+    background: #FFFFFF;
+    height: 76px;
+    width: 100%;
+    align-self: flex-end;
+    padding: 10px 26px;
+}
+
+.in_card_img {
+    width: 100%;
+    height: 155px;
+    /* overflow: hidden; */
+}
+
+/* .in_card_img img {
+    transition: transform 0.4s ease;
+} */
+
+.in_card_dis {
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+        
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.9px;
+
+    color: #1D293F;
+} 
+
+.in_card_price {
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+        
+    text-align: right;
+
+    color: var(--color-sky);
+}
+
+
+/* hover */
+
+/* .in_card_img:hover {
+    transform: scale(1.5);
+    overflow: hidden;
+} */
+
+/* hover */
+
+/* *** CARD SECTION END *** */
