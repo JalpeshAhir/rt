@@ -14,6 +14,64 @@
   margin-top: 4rem;
 }
 
+/*  ---------- SUBMENU START ----------- */
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #fff;
+  /* background: darkorange; */
+  display: block;
+  float: left;
+  /* padding: 1rem; */
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+li a {
+  color: #fff;
+}
+
+li:hover {
+  /* background: red; */
+  cursor: pointer;
+}
+
+ul li ul {
+  background: rgba(255, 255, 255, 68%);
+  visibility: hidden;
+  opacity: 0;
+  min-width: 10rem;
+  min-height: 10rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  /* margin-left: 10%; */
+  left: 0;
+  display: none;
+  z-index: 99;
+  padding: 1rem;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+  padding: 10px 1rem;
+}
+
+/*  ---------- SUBMENU END ----------- */
+
 /* ** CAROUSEL START ** */
 
 .carousel {
@@ -55,7 +113,7 @@
   align-items: center;
   justify-self: center;
   align-self: center;
-  margin: 1.88rem 10rem 5px 10rem;
+  margin: 1.78rem 10rem 5px 10rem;
 
   display: flex;
   justify-content: space-between;

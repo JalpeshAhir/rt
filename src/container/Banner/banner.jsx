@@ -25,13 +25,21 @@ const Banner = (props) => {
             {categories && categories.length > 0 ?
               categories.map((c, index) => {
                 return (
-                  <Link className="nav_link">{c.name}</Link>
+                  // <Link className="nav_link">{c.name}</Link>
+                  <ul className='top_submenu'>
+                    <li>
+                      <Link className="nav_link">{c.name}</Link>
+                      <ul>
+                        <li><Link className="nav_link" to={{ pathname: "/ManyProductPage" }}>jalpesh</Link></li>
+                        <li><Link className="nav_link">vishal</Link></li>
+                        <li><Link className="nav_link">madhav</Link></li>
+                      </ul>
+                    </li>
+                  </ul>
+
                 )
               })
               : null}
-            <Link className="nav_link">discover</Link>
-            <Link className="nav_link">about</Link>
-            <Link className="nav_link">shop</Link>
           </div>
 
           <div className="banner_contectus_section">

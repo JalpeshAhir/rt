@@ -137,8 +137,9 @@
 
 .cart_item_section03 {
   display: flex;
-  gap: 5rem;
-  margin-left: 50%;
+  /* gap: 7.5rem; */
+  justify-content: space-between;
+  margin-left: 55%;
   align-items: center;
   /* margin-bottom: 10%; */
 }
@@ -159,7 +160,7 @@
 .sub_total_wrap_dis {
   float: right;
   font-family: var(--font-base);
-  font-size: 20px;
+  font-size: 18px;
   color: #797979;
 }
 
